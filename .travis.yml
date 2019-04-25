@@ -1,3 +1,5 @@
 language: minimal
 dist: xenial
 install: ./install-dependencies.sh
+script: ./typecheck-all.sh
+
