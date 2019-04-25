@@ -3,8 +3,11 @@
 set -ev
 
 pwd
-export PVS_DIR=`readlink -f pvslib/pvs`
-echo PVS_DIR=$PVS_DIR
+cd pvslib/pvs
+export PVS_DIR=`pwd`
+pwd
+cd ../..
+echo PVS_DIR="$PVS_DIR"
 export PATH=$PVS_DIR:$PATH
 echo PATH=$PATH
 cd $PVS_DIR/nasalib
