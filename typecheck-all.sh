@@ -6,4 +6,5 @@ export PATH=$PVS_PATH:$PATH
 echo PATH=$PATH
 cd $PVS_PATH/nasalib
 pwd
-./typecheck-all
+./typecheck-all --verbose
+cat ./nasalib.summaries
