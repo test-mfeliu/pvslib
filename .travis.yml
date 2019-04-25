@@ -5,5 +5,7 @@ script: ./typecheck-all.sh
 
 jobs:
   include:
-    - script: ./typecheck-all.sh.1
-    - script: ./typecheck-all.sh.2
+    - script: ./RELEASE/CI/typecheck-all.sh.1
+    - script: ./RELEASE/CI/typecheck-all.sh.2
+    - script: ./RELEASE/CI/typecheck-all.sh.3
+    - script: ./RELEASE/CI/typecheck-all.sh.4
