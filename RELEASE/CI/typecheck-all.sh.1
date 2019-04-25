@@ -22,7 +22,7 @@ fi
 
 if [ "$provethem" ]; then
   $provethem --clean $* nasalib.all
-  $provethem --clearpath --addpath --typecheck $* nasalib.all.1
+  $provethem --clearpath --addpath --typecheck $* RELEASE/CI/nasalib.all.1
 else
   echo "Directory where PVS is installed must be in the environment variable PATH for this command to work"
 fi

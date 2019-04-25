@@ -2,9 +2,13 @@
 
 set -ev
 
+echo "typecheck-all.sh"
 pwd
-export PVS_DIR=`readlink -f pvslib/pvs`
-echo PVS_DIR=$PVS_DIR
+cd pvs
+export PVS_DIR=`pwd`
+pwd
+cd ../..
+echo PVS_DIR="$PVS_DIR"
 export PATH=$PVS_DIR:$PATH
 echo PATH=$PATH
 cd $PVS_DIR/nasalib
@@ -18,7 +22,7 @@ fi
 
 if [ "$provethem" ]; then
   $provethem --clean $* nasalib.all
-  $provethem --clearpath --addpath --typecheck $* nasalib.all.3
+  $provethem --clearpath --addpath --typecheck $* RELEASE/CI/nasalib.all.3
 else
   echo "Directory where PVS is installed must be in the environment variable PATH for this command to work"
 fi
