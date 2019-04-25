@@ -15,5 +15,6 @@ echo PATH=$PATH
 ln -s .. nasalib
 cd nasalib
 ./install-scripts
+proveit --help
 ls
 
