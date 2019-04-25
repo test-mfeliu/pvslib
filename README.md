@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/test-mfeliu/pvslib.svg?branch=master)](https://travis-ci.com/test-mfeliu/pvslib)
 [NASA PVS Library](http://shemesh.larc.nasa.gov/fm/ftp/larc/PVS-library)
 =
 
