@@ -5,5 +5,5 @@ script: ./typecheck-all.sh
 
 jobs:
   include:
-    - script: ./typecheck-all.sh nasalib.all.1
-    - script: ./typecheck-all.sh nasalib.all.2
+    - script: ./typecheck-all.sh.1
+    - script: ./typecheck-all.sh.2
